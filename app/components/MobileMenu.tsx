@@ -1,5 +1,5 @@
 import React from 'react'
-import { X, Users, Ticket, LayoutGrid, ChartNoAxesColumn, Sparkle } from 'lucide-react'
+import { X, Users, Tag , LayoutGrid, ChartNoAxesColumn, Sparkle } from 'lucide-react'
 
 interface MobileMenuProps {
   isOpen: boolean
@@ -17,7 +17,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutGrid },
     { id: 'users', label: 'Users', icon: Users },
-    { id: 'vouchers', label: 'Vouchers', icon: Ticket },
+    { id: 'vouchers', label: 'Vouchers', icon: Tag  },
     { id: 'analytics', label: 'Analytics', icon: ChartNoAxesColumn },
     { id: 'spotlight', label: 'Spotlight', icon: Sparkle }
   ]
