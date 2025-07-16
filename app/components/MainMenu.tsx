@@ -1,5 +1,5 @@
 import React from 'react'
-import { Users, Tag, LayoutGrid, ChartNoAxesColumn, Sparkle } from 'lucide-react'
+import { Tag, LayoutGrid, ChartNoAxesColumn, Sparkle, Crosshair } from 'lucide-react'
 
 interface MainMenuProps {
   activePage: string
@@ -9,7 +9,7 @@ interface MainMenuProps {
 export const MainMenu: React.FC<MainMenuProps> = ({ activePage, onPageChange }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutGrid },
-    { id: 'users', label: 'Users', icon: Users },
+    { id: 'users', label: 'Users', icon: Crosshair },
     { id: 'vouchers', label: 'Vouchers', icon: Tag },
     { id: 'analytics', label: 'Analytics', icon: ChartNoAxesColumn },
     { id: 'spotlight', label: 'Spotlight', icon: Sparkle }
