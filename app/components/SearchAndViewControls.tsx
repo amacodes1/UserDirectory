@@ -22,7 +22,7 @@ export const SearchAndViewControls: React.FC<SearchAndViewControlsProps> = ({
         {/* Search */}
         <div className="flex-1 flex items-center">
           <span className={`${isMobile ? 'hidden' : 'hidden sm:inline-block'}`}>
-            <Search className="h-5 w-5 text-gray-400 ml-2" />
+            <Search className="h-5 w-5 text-gray-600 ml-2" />
           </span>
           <input
             type="text"
@@ -32,7 +32,7 @@ export const SearchAndViewControls: React.FC<SearchAndViewControlsProps> = ({
             className={`flex-1 bg-transparent border-0 focus:outline-none focus:ring-0 ml-2 ${
               isMobile
                 ? 'text-white placeholder-white'
-                : 'text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400'
+                : 'text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-600'
             }`}
           />
         </div>
