@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# UserDirectoryTest - User Directory Application
+# UserDirectory - User Directory Application
 
 A modern React application with a user directory interface featuring dark mode support, real-time search, and responsive design.
 
@@ -42,7 +41,7 @@ A modern React application with a user directory interface featuring dark mode s
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd UserDirectoryTest
+   cd UserDirectory
    ```
 
 2. **Install dependencies**
@@ -61,7 +60,7 @@ A modern React application with a user directory interface featuring dark mode s
 ## 🏗️ Project Structure
 
 ```
-UserDirectoryTest/
+UserDirectory/
 ├── app/
 │   ├── components/
 │   │   ├── pages/           # Page components
@@ -209,10 +208,3 @@ For support and questions:
 - Create an issue in the repository
 - Check the troubleshooting section above
 - Review the code comments for implementation details
-
----
-
-**Built with ❤️ using React, TypeScript, and Tailwind CSS**
-=======
-# UserDirectoryTest
->>>>>>> 614165c81cc14c144b882693008cc2a7a3e19531
