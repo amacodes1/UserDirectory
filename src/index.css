@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* Dark mode base styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark html {
+  background-color: #1a1a1a;
+}
+
+.dark body {
+  background-color: #1a1a1a;
+  color: #f9fafb;
+}
+
+/* Manual dark mode styles to match reference images exactly */
+.dark .bg-gray-50 {
+  background-color: #1a1a1a !important;
+}
+
+.dark .bg-gray-900 {
+  background-color: #1a1a1a !important;
+}
+
+.dark .bg-white {
+  background-color: #2d2d2d !important;
+}
+
+.dark .bg-gray-800 {
+  background-color: #2d2d2d !important;
+}
+
+.dark .bg-gray-700 {
+  background-color: #404040 !important;
+}
+
+.dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark .text-white {
+  color: #ffffff !important;
+}
+
+.dark .text-gray-500 {
+  color: #a0a0a0 !important;
+}
+
+.dark .text-gray-400 {
+  color: #a0a0a0 !important;
+}
+
+.dark .text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-600 {
+  color: #a0a0a0 !important;
+}
+
+.dark .border-gray-200 {
+  border-color: #404040 !important;
+}
+
+.dark .border-gray-300 {
+  border-color: #404040 !important;
+}
+
+.dark .border-gray-600 {
+  border-color: #404040 !important;
+}
+
+.dark .border-gray-700 {
+  border-color: #404040 !important;
+}
+
+.dark .hover\:bg-gray-50:hover {
+  background-color: #404040 !important;
+}
+
+.dark .hover\:bg-gray-700:hover {
+  background-color: #505050 !important;
+}
+
+.dark .hover\:text-gray-500:hover {
+  color: #a0a0a0 !important;
+}
+
+.dark .hover\:text-gray-300:hover {
+  color: #d1d5db !important;
+}
+
+/* Active button states */
+.dark .bg-gray-200 {
+  background-color: #404040 !important;
+}
+
+.dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+/* Blue accent colors for active states */
+.dark .bg-blue-50 {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+.dark .bg-blue-900\/20 {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+}
+
+.dark .text-blue-700 {
+  color: #60a5fa !important;
+}
+
+.dark .text-blue-300 {
+  color: #60a5fa !important;
+}
+
+.dark .bg-blue-600 {
+  background-color: #3b82f6 !important;
+}
+
+.dark .bg-blue-500 {
+  background-color: #3b82f6 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
