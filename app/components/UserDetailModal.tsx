@@ -42,25 +42,22 @@ export const UserDetailModal: React.FC<UserDetailModalProps> = ({ isOpen, onClos
             {/* Avatar and Name */}
             <div className="flex flex-col items-center">
               <div className="h-24 w-24 rounded-full overflow-hidden mb-4">
-                {user.avatar ? (
-                  <img
-                    src={user.avatar}
-                    alt={user.name}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
-                  <div className="h-full w-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-semibold text-2xl">
-                    {user.name.charAt(0).toUpperCase()}
-                  </div>
-                )}
+                <img
+                  src={user.avatar || '/usericon3.png'}
+                  alt={user.name}
+                  className="h-full w-full object-cover"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white text-center">
-                {user.name}
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-1">
-                {user.email}
-              </p>
-            </div>
+
+                {/* Gradient Background Behind Name */}
+                <div className="w-fit text-center bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2">
+                  <h3 className="text-xl font-semibold text-white">{user.name}</h3>
+                </div>
+
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-1">
+                  {user.email}
+                </p>
+              </div>
 
             {/* Details */}
             <div className="space-y-4">

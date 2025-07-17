@@ -20,6 +20,8 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ onClose }) => {
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [dobType, setDobType] = useState("text");
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -120,10 +122,13 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ onClose }) => {
             <label className="block text-white mb-1 text-sm">Date of Birth</label>
             
               <input
-                type="date"
+                type={dobType}
                 name="dob"
                 value={formData.dob}
                 onChange={handleInputChange}
+                onFocus={() => setDobType("date")}
+                onBlur={() => formData.dob === "" && setDobType("text")}
+                placeholder="E.g 20/04/1945"
                 className={`w-full pl-6 pr-3 py-3 rounded-lg bg-zinc-800 text-white placeholder-zinc-600 border ${
                   errors.dob ? "border-red-500" : "border-zinc-800"
                 }`}
